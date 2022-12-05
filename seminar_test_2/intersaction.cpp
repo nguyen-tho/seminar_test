@@ -5,7 +5,7 @@
 #include <fstream>
 #include <algorithm>
 #include <math.h>
-
+#define MAX 100000
 using namespace std;
 
 struct subject {
@@ -15,8 +15,8 @@ struct subject {
 };
 
 int n;
-subject S[1000];
-subject choose[1000];
+subject S[MAX];
+subject choose[MAX];
 char split;
 
 void getData() {

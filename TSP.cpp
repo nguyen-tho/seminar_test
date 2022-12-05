@@ -2,7 +2,7 @@
  
 using namespace std;
  
-int arr[10][10],completed[10],n,cost=0;
+int arr[100][100],completed[100],n,cost=0;
  
 void takeInput()
 {
@@ -15,14 +15,14 @@ void takeInput()
  
     for(i=0;i < n;i++)
     {
-        cout<<"\nEnter Elements of Row: "<<i+1<<"\n";
+        //cout<<"\nEnter Elements of Row: "<<i+1<<"\n";
  
         for( j=0;j < n;j++)
             cin>>arr[i][j];
  
         completed[i]=0;
     }
- 
+ /*
     cout<<"\n\nThe cost list is:";
  
     for( i=0;i < n;i++)
@@ -31,7 +31,7 @@ void takeInput()
  
     for(j=0;j < n;j++)
         cout<<"\t"<<arr[i][j];
-    }
+    }*/
 }
  
 /*
@@ -93,7 +93,7 @@ int main()
 {
     takeInput();
  
-    cout<<"\n\nThe Path is:\n";
+    //cout<<"\n\nThe Path is:\n";
     mincost(0); //passing 0 because starting vertex
  
     cout<<"\n\nMinimum cost is "<<cost;

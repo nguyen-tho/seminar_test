@@ -167,7 +167,7 @@ int main()
     getData();
     typing_assignment1();
     
-    typing_assignment2();
+    //typing_assignment2();
     return 0;
 }
 

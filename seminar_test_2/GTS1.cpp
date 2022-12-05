@@ -2,7 +2,7 @@
 #include<limits.h>
 #include<fstream>
 using namespace std;
-#define MAX 100
+#define MAX 1000
 
 int matrix[MAX][MAX];
 int n;
@@ -67,7 +67,7 @@ void GTS1(int v){
 
 int main(){
     getInput();
-    GTS1(4);
+    GTS1(5);
     getOutput();
     return 0;
 }

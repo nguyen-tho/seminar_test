@@ -5,6 +5,9 @@
 #include <float.h>
 #include <stdlib.h>
 #include <math.h>
+#include<iostream>
+#define MAX 100000
+using namespace std;
 
 // A structure to represent a Point in 2D plane
 struct Point
@@ -12,6 +15,23 @@ struct Point
 	int x, y;
 };
 
+void getInput(Point p[], int &n){
+	cout<<"Enter number of points: ";
+	cin>> n;
+	cout<<"Enter position of points: \n";
+	for(int i = 0; i < n; i++){
+		cout<<"Point "<<i+1<<": ";
+		cin>> p[i].x;
+		cin>>p[i].y;
+	}
+}
+void showPoint(Point p[], int n){
+	cout<<"Point set: { ";
+	for(int i = 0; i < n; i++){
+		cout<<"( "<<p[i].x<<" , "<<p[i].y<<" )";
+	}
+	cout<<" }\n";
+}
 /* Following two functions are needed for library function qsort().
 Refer: http://www.cplusplus.com/reference/clibrary/cstdlib/qsort/ */
 
@@ -125,8 +145,13 @@ float closest(Point P[], int n)
 // Driver program to test above functions
 int main()
 {
-	Point P[] = {{2, 3}, {12, 30}, {40, 50}, {5, 1}, {12, 10}, {3, 4}};
-	int n = sizeof(P) / sizeof(P[0]);
+	//Point P[] = {{2, 3}, {12, 30}, {40, 50}, {5, 1}, {12, 10}, {3, 4}};
+	//int n = sizeof(P) / sizeof(P[0]);
+
+	int n;
+	Point P[MAX];
+	getInput(P, n);
+	showPoint(P, n);
 	printf("The smallest distance is %f ", closest(P, n));
 	return 0;
 }

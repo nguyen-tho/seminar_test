@@ -19,7 +19,7 @@ struct result
 
 void getInput(){
     ifstream fi;
-    fi.open("GTS1.inp");
+    fi.open("C:\Users\USER\Downloads\data_test2\tsp.inp");
     if(fi.bad()){
         cout<<"File Doesn't Exist";
     }

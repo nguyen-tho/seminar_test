@@ -64,6 +64,7 @@ void assignment(){
 }
 
 void getOutPut(){
+    /*
     cout<<"Assignment matrix\n";
     for(int i = 0; i < n; i++){       
         for(int j = 0; j < n; j++){
@@ -71,6 +72,7 @@ void getOutPut(){
         }
         cout<<"\n";
     }
+    */
     for(int i = 0; i < n; i++){
         cout << "Worker " << A[i].worker << " was assigned job " << A[i].job<<"\n";
     }

@@ -33,7 +33,7 @@ void getData() {
         B[i].id = i;
         IF >> B[i].nop;
         B[i].eTime = B[i].nop / 10;
-        B[i].mTime = B[i].eTime * 3 / 2;
+        B[i].mTime = B[i].eTime * 4 / 3;
     }
 }
 
